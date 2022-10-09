@@ -4,9 +4,9 @@ import { ComponentProps } from '@stitches/react'
 
 import { styled } from '../styles'
 
-export const Text = styled('p', {
+export const Heading = styled('h2', {
   fontFamily: '$default',
-  lineHeight: '$base',
+  lineHeight: '$short',
   margin: 0,
   padding: 0,
   color: '$gray100',
@@ -24,54 +24,39 @@ export const Text = styled('p', {
       },
     },
     size: {
-      xxs: {
-        fontSize: '$xxs',
-      },
-      xs: {
-        fontSize: '$xs',
-      },
       sm: {
-        fontSize: '$sm',
-      },
-      md: {
-        fontSize: '$md',
-      },
-      lg: {
-        fontSize: '$lg',
-      },
-      xl: {
         fontSize: '$xl',
       },
-      '2xl': {
+      md: {
         fontSize: '$2xl',
       },
-      '4xl': {
+      lg: {
         fontSize: '$4xl',
       },
-      '5xl': {
+      xl: {
         fontSize: '$5xl',
       },
-      '6xl': {
+      '2xl': {
         fontSize: '$6xl',
       },
-      '7xl': {
+      '3xl': {
         fontSize: '$7xl',
       },
-      '8xl': {
+      '4xl': {
         fontSize: '$8xl',
       },
-      '9xl': {
+      '5xl': {
         fontSize: '$9xl',
       },
     },
   },
 
   defaultVariants: {
-    weight: 'regular',
+    weight: 'bold',
     size: 'md',
   },
 })
 
-export type TextProps = ComponentProps<typeof Text> & {
+export type HeadingProps = ComponentProps<typeof Heading> & {
   as?: ElementType
 }

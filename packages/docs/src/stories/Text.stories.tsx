@@ -14,6 +14,10 @@ export default {
       description: 'Font weight of the text',
       type: 'string',
     },
+    size: {
+      description: 'Size of the text',
+      type: 'string',
+    },
   },
 } as Meta<TextProps>
 
@@ -28,5 +32,12 @@ export const Medium: StoryObj<TextProps> = {
 export const Bold: StoryObj<TextProps> = {
   args: {
     weight: 'bold',
+  },
+}
+
+export const ExtraLarge: StoryObj<TextProps> = {
+  name: 'Extra Large',
+  args: {
+    size: 'xl',
   },
 }

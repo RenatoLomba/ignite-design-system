@@ -4,9 +4,9 @@ Design System construído no Bootcamp Ignite (React⚛️) da Rocketseat🚀
 
 ## Components
 
-- [ ] Text
-- [ ] Heading
-- [ ] Box
+- [x] Text
+- [x] Heading
+- [x] Box
 - [ ] Button
 - [ ] TextInput
 - [ ] TextArea
