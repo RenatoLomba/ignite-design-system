@@ -1,0 +1,3 @@
+{
+  "extends": ["@renato-ignite-ui/eslint-config"]
+}

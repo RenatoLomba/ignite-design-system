@@ -1,0 +1,31 @@
+{
+  "name": "@renato-ignite-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**/*"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "predev": "rimraf dist",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "npx eslint src --ext .ts,.tsx",
+    "lint:fix": "npx eslint src --ext .ts,.tsx --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@renato-ignite-ui/eslint-config": "*",
+    "@renato-ignite-ui/ts-config": "*",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  }
+}
