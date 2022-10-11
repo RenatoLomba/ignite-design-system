@@ -23,6 +23,21 @@ export const Default: StoryObj<AvatarProps> = {
 }
 
 export const Fallback: StoryObj<AvatarProps> = {
+  render: (props) => {
+    return (
+      <div
+        style={{
+          width: 'fit-content',
+          background: '#fff',
+          padding: '16px',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        <Avatar {...props} />
+      </div>
+    )
+  },
   args: {
     alt: 'Renato Lomba',
   },
