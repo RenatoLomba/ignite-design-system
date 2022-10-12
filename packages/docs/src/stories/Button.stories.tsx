@@ -1,6 +1,6 @@
 import { ArrowRight } from 'phosphor-react'
 
-import { Button, ButtonProps } from '@renato-ignite-ui/react'
+import { Box, Button, ButtonProps } from '@renato-ignite-ui/react'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {
@@ -90,17 +90,9 @@ export const OutlinedDisabled: StoryObj<ButtonProps> = {
 export const AlternativeDisabled: StoryObj<ButtonProps> = {
   render: (props) => {
     return (
-      <div
-        style={{
-          width: 'fit-content',
-          background: '#fff',
-          padding: '16px',
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
+      <Box>
         <Button {...props} />
-      </div>
+      </Box>
     )
   },
   args: {

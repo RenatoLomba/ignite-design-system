@@ -1,4 +1,4 @@
-import { Avatar, AvatarProps } from '@renato-ignite-ui/react'
+import { Avatar, AvatarProps, Box } from '@renato-ignite-ui/react'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {
@@ -23,21 +23,11 @@ export const Default: StoryObj<AvatarProps> = {
 }
 
 export const Fallback: StoryObj<AvatarProps> = {
-  render: (props) => {
-    return (
-      <div
-        style={{
-          width: 'fit-content',
-          background: '#fff',
-          padding: '16px',
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        <Avatar {...props} />
-      </div>
-    )
-  },
+  decorators: [
+    (story) => {
+      return <Box>{story()}</Box>
+    },
+  ],
   args: {
     alt: 'Renato Lomba',
   },
