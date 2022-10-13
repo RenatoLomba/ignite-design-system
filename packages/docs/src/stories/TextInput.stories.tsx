@@ -6,6 +6,9 @@ export default {
   component: TextInput,
 
   argTypes: {
+    onChange: {
+      action: 'change',
+    },
     placeholder: {
       name: 'placeholder',
       description: 'Text that appears when user did not typed anything',

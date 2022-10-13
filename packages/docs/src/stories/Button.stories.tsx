@@ -11,6 +11,9 @@ export default {
     children: 'Send',
   },
   argTypes: {
+    onClick: {
+      action: 'click',
+    },
     variant: {
       name: 'variant',
       type: 'string',

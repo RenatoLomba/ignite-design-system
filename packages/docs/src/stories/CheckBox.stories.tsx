@@ -6,6 +6,9 @@ export default {
   component: CheckBox,
 
   argTypes: {
+    onCheckedChange: {
+      action: 'change',
+    },
     checked: {
       name: 'checked',
       description: 'Control the checkbox checked state',

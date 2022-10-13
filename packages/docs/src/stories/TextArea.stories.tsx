@@ -6,6 +6,9 @@ export default {
   component: TextArea,
 
   argTypes: {
+    onChange: {
+      action: 'change',
+    },
     placeholder: {
       name: 'placeholder',
       description: 'Text that appears when user did not typed anything',
