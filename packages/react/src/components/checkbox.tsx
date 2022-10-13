@@ -73,3 +73,5 @@ export const CheckBox: FC<CheckBoxProps> = (props) => {
     </CheckBoxContainer>
   )
 }
+
+CheckBox.displayName = 'CheckBox'
