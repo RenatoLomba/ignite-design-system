@@ -9,7 +9,7 @@ Design System construído no Bootcamp Ignite (React⚛️) da Rocketseat🚀
 - [x] Box
 - [x] Button
 - [x] TextInput
-- [ ] TextArea
-- [ ] Checkbox
+- [x] TextArea
+- [x] Checkbox
 - [x] Avatar
-- [ ] MultiStep
+- [x] MultiStep
