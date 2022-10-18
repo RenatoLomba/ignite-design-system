@@ -7,9 +7,11 @@ export default {
 
   argTypes: {
     src: {
+      type: 'string',
       description: 'Image source uri',
     },
     alt: {
+      type: 'string',
       description: 'Alternative text to show if image is not loaded',
     },
   },

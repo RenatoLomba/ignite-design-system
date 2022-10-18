@@ -9,23 +9,29 @@ export default {
 
   args: {
     children: 'Send',
+    variant: 'contained',
+    size: 'md',
+    disabled: false,
   },
   argTypes: {
     onClick: {
       action: 'click',
     },
     variant: {
-      name: 'variant',
-      type: 'string',
+      options: ['contained', 'outlined', 'alternative'],
+      control: {
+        type: 'inline-radio',
+      },
       description: 'Button variant color',
     },
     size: {
-      name: 'size',
-      type: 'string',
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
       description: 'Button size',
     },
     disabled: {
-      name: 'disabled',
       type: 'boolean',
       description: 'User cannot perform actions with this state',
     },
@@ -33,12 +39,6 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {}
-
-export const Contained: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'contained',
-  },
-}
 
 export const Outlined: StoryObj<ButtonProps> = {
   args: {
