@@ -1,0 +1,2 @@
+import{e,a as r,B as s,H as a}from"./index.3e40ef16.js";import{j as t,a as n}from"./jsx-runtime.b37b5642.js";import"./index.77fd2642.js";import"./iframe.a2939c73.js";import"./index.733586e1.js";const d={title:"Data display/Tooltip",component:e,args:{content:"Tooltip content example",children:t(r,{children:"Hover"})}},u={decorators:[o=>n(s,{children:[t(a,{css:{marginBottom:"1rem"},children:"Pass the mouse over the button"}),o()]})]},h=["Default"];export{u as Default,h as __namedExportsOrder,d as default};
+//# sourceMappingURL=Tooltip.stories.566d598f.js.map
