@@ -1,5 +1,11 @@
 # @renato-ignite-ui/react
 
+## 2.3.0
+
+### Minor Changes
+
+- feat: New variants for tooltip
+
 ## 2.2.0
 
 ### Minor Changes

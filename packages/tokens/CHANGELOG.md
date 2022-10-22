@@ -1,5 +1,11 @@
 # @renato-ignite-ui/tokens
 
+## 2.2.0
+
+### Minor Changes
+
+- feat: New variants for tooltip
+
 ## 2.1.0
 
 ### Minor Changes

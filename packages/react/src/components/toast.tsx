@@ -40,10 +40,33 @@ const ToastViewport = styled(RadixToast.Viewport, {
 
 const ToastContainer = styled(RadixToast.Root, {
   maxWidth: 360,
-  backgroundColor: '$gray800',
   borderRadius: 6,
   padding: '0.75rem 1.25rem',
   position: 'relative',
+
+  variants: {
+    variant: {
+      default: {
+        backgroundColor: '$gray800',
+      },
+      success: {
+        backgroundColor: '$ignite500',
+      },
+      error: {
+        backgroundColor: '$red700',
+      },
+      warning: {
+        backgroundColor: '$orange700',
+      },
+      info: {
+        backgroundColor: '$rocketseat500',
+      },
+    },
+  },
+
+  defaultVariants: {
+    variant: 'default',
+  },
 
   '@media (prefers-reduced-motion: no-preference)': {
     '&[data-state="open"]': {
@@ -100,6 +123,7 @@ export type ToastProps = {
   title: string
   description?: string
   setOpen: Dispatch<boolean>
+  variant?: 'default' | 'success' | 'error' | 'warning' | 'info' | undefined
 }
 
 export const Toast: FC<ToastProps> = ({
@@ -107,10 +131,11 @@ export const Toast: FC<ToastProps> = ({
   open,
   title,
   description,
+  variant,
 }) => {
   return (
     <RadixToast.Provider swipeDirection="right">
-      <ToastContainer open={open} onOpenChange={setOpen}>
+      <ToastContainer variant={variant} open={open} onOpenChange={setOpen}>
         {title && <ToastTitle>{title}</ToastTitle>}
 
         {description && (
